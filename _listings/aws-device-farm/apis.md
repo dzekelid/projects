@@ -25,7 +25,7 @@ apis:
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/projects/master/_listings/aws-device-farm/action-deleteproject-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/projects/master/_listings/aws-device-farm/action-getproject-get.md
 x-common:
 - type: x-blog
   url: https://aws.amazon.com/blogs/mobile/tag/aws-device-farm/
