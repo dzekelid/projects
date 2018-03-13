@@ -25,7 +25,7 @@ apis:
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/projects/master/_listings/bitbucket/teams-owner-projects-project-key-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/projects/master/_listings/bitbucket/teams-owner-projects-project-key-get.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
