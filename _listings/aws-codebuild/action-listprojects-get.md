@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListProjects&k=1:
+  /?Action=ListProjects:
     get:
       summary: ' List Projects '
       description: Gets a list of build project names, with each build project name
