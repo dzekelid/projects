@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateProject&k=1:
+  /?Action=UpdateProject:
     get:
       summary: ' Update Project '
       description: Modifies the specified project name, given the project ARN and
