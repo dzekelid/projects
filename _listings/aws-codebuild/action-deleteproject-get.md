@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteProject&k=1:
+  /?Action=DeleteProject:
     get:
       summary: ' Delete Project '
       description: Deletes a build project
