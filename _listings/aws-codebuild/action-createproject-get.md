@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateProject&k=1:
+  /?Action=CreateProject:
     get:
       summary: ' Create Project '
       description: Creates a build project
