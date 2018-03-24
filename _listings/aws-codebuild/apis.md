@@ -16,8 +16,8 @@ tags:
 - SDK
 - Orchestration
 - Amazon Web Services
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-23"
+modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-codebuild/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -30,7 +30,7 @@ apis:
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-codebuild/action-updateproject-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-codebuild/action-batchgetprojects-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codebuild/index.html
