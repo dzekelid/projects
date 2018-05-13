@@ -28,15 +28,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-tiers-get.md
-- name: Google Cloud SQL API Put Projects Project Instances Instance Users
-  description: Updates an existing user in a Cloud SQL instance.
+- name: Google Cloud SQL API Get Projects Project Operations
+  description: Lists all instance operations that have been performed on the given
+    Cloud SQL instance in the reverse chronological order of the start time.
   image: ""
   humanURL: https://cloud.google.com/sql/
   baseURL: http:://www.googleapis.com//sql/v1beta4
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-instances-instance-users-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-operations-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-operations-get-postman.md
 x-common:
 - type: x-change-log
   url: https://cloud.google.com/sql/docs/release-notes
