@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Device Farm API
+  title: AWS Device Farm API Get Project
   version: 1.0.0
+  description: Gets information about a project.
 schemes:
 - http
 produces:
