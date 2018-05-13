@@ -40,17 +40,18 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-operations-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-operations-get-postman.md
-- name: Google Cloud SQL API Get Projects Project Operations Operation
-  description: Retrieves an instance operation that has been performed on an instance.
+- name: Google Cloud SQL API Get Projects Project Tiers
+  description: Lists all available service tiers for Google Cloud SQL, for example
+    D1, D2. For related information, see Pricing.
   image: ""
   humanURL: https://cloud.google.com/sql/
   baseURL: http:://www.googleapis.com//sql/v1beta4
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-operations-operation-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-tiers-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-operations-operation-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-tiers-get-postman.md
 x-common:
 - type: x-change-log
   url: https://cloud.google.com/sql/docs/release-notes
