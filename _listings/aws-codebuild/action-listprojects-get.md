@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeBuild API
+  title: AWS CodeBuild API List Projects
   version: 1.0.0
+  description: Gets a list of build project names, with each build project name representing
+    a single build project.
 schemes:
 - http
 produces:
