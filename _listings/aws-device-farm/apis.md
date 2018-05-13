@@ -26,15 +26,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-device-farm/action-updateproject-get.md
-- name: AWS Device Farm API Delete Project
-  description: Deletes an AWS Device Farm project, given the project ARN.
+- name: AWS Device Farm API Get Project
+  description: Gets information about a project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Mobile-Services_AWSDeviceFarm.png
   humanURL: https://aws.amazon.com/device-farm/
   baseURL: http:://{host}//
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-device-farm/action-deleteproject-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-device-farm/action-getproject-get.md
 x-common:
 - type: x-blog
   url: https://aws.amazon.com/blogs/mobile/tag/aws-device-farm/
