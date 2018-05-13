@@ -28,15 +28,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-tiers-get.md
-- name: Google Cloud SQL API Add Projects Project Instances
-  description: Creates a new Cloud SQL instance.
+- name: Google Cloud SQL API Delete Projects Project Instances Instance
+  description: Deletes a Cloud SQL instance.
   image: ""
   humanURL: https://cloud.google.com/sql/
   baseURL: http:://www.googleapis.com//sql/v1beta4
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-instances-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-instances-instance-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/google-cloud-sql/projects-project-instances-instance-delete-postman.md
 x-common:
 - type: x-change-log
   url: https://cloud.google.com/sql/docs/release-notes
