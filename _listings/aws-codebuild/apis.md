@@ -31,16 +31,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-codebuild/action-updateproject-get.md
-- name: AWS CodeBuild API List Projects
-  description: Gets a list of build project names, with each build project name representing
-    a single build project.
+- name: AWS CodeBuild API Update Project
+  description: Changes the settings of an existing build project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/code-build-console-icon.png
   humanURL: https://aws.amazon.com/codebuild/
   baseURL: http:://{host}//
   tags: Projects
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-codebuild/action-listprojects-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/aws-codebuild/action-updateproject-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codebuild/index.html
