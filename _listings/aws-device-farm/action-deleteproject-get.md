@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Device Farm API
+  title: AWS Device Farm API Delete Project
   version: 1.0.0
+  description: Deletes an AWS Device Farm project, given the project ARN.
 schemes:
 - http
 produces:
