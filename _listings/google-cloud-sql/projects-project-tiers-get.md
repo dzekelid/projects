@@ -1,9 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: Cloud SQL Administration
-  description: Creates and configures Cloud SQL instances, which provide fully-managed
-    MySQL databases.
+  title: Google Cloud SQL API Get Projects Project Tiers
+  description: Lists all available service tiers for Google Cloud SQL, for example
+    D1, D2. For related information, see Pricing.
   contact:
     name: Google
     url: https://google.com
