@@ -32,7 +32,51 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/circleci/projects-get.md
+- name: CircleCI Get Projects
+  description: List of all the projects you're following on CircleCI, with build information
+    organized by branch.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/circleci-logo.png
+  humanURL: https://circleci.com/
+  baseURL: https://circleci.com//api/v1
+  tags: Projects
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/circleci/projects-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/projects/master/_listings/circleci/projects-get-postman.md
 x-common:
+- type: x-blog
+  url: https://circleci.com/blog/
+- type: x-blog-rss
+  url: https://circleci.com/blog/feed.xml
+- type: x-case-studies
+  url: https://circleci.com/customers/
+- type: x-change-log
+  url: https://circleci.com/changelog/
+- type: x-contact-form
+  url: https://circleci.com/contact/
+- type: x-documentation
+  url: https://circleci.com/docs/
+- type: x-github
+  url: https://github.com/circleci
+- type: x-linkedin
+  url: https://www.linkedin.com/company/circleci
+- type: x-pricing
+  url: https://circleci.com/pricing/
+- type: x-privacy-policy
+  url: https://circleci.com/privacy/
+- type: x-selfservice-registration
+  url: https://circleci.com/signup/
+- type: x-status
+  url: https://status.circleci.com/
+- type: x-support
+  url: https://support.circleci.com/hc/en-us
+- type: x-terms-of-service
+  url: https://circleci.com/terms-of-service/
+- type: x-twitter
+  url: https://twitter.com/circleci
+- type: x-website
+  url: https://circleci.com/
 - type: x-blog
   url: https://circleci.com/blog/
 - type: x-blog-rss
