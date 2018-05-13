@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeBuild API
+  title: AWS CodeBuild API Batch Get Projects
   version: 1.0.0
+  description: Gets information about one or more build projects.
 schemes:
 - http
 produces:
