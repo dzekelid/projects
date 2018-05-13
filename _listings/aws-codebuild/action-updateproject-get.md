@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeBuild API
+  title: AWS CodeBuild API Update Project
   version: 1.0.0
+  description: Changes the settings of an existing build project.
 schemes:
 - http
 produces:
