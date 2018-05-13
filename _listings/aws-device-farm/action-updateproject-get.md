@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Device Farm API
+  title: AWS Device Farm API Update Project
   version: 1.0.0
+  description: Modifies the specified project name, given the project ARN and a new
+    name.
 schemes:
 - http
 produces:
