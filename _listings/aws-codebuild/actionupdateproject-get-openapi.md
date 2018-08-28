@@ -180,6 +180,33 @@ paths:
           description: OK
       tags:
       - Projects
+  /?Action=ListBuildsForProject:
+    get:
+      summary: List Builds For Project
+      description: Gets a list of build IDs for the specified build project, with
+        each build ID representing a single build.
+      operationId: listBuildsForProject
+      x-api-path-slug: actionlistbuildsforproject-get
+      parameters:
+      - in: query
+        name: nextToken
+        description: During a previous call, if there are more than 100 items in the
+          list, only the first 100 items are returned, along with a unique string
+          called a next token
+        type: string
+      - in: query
+        name: projectName
+        description: The name of the build project to get a list of build IDs for
+        type: string
+      - in: query
+        name: sortOrder
+        description: The order to list build IDs
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project Builds
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -683,6 +683,129 @@ paths:
       - Glossaries
       - GlossaryId
       - Download
+  /projects/{projectId}/styleguides:
+    get:
+      summary: Get a list of style guides
+      description: Get a list of style guides.
+      operationId: getStyleGuides
+      x-api-path-slug: projectsprojectidstyleguides-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+    post:
+      summary: Upload a new style guide
+      description: Upload a new style guide.
+      operationId: createStyleGuide
+      x-api-path-slug: projectsprojectidstyleguides-post
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: formData
+        name: styleguides[]
+        description: You can add as many files as you want in styleguides[] parameter
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+  /projects/{projectId}/styleguides/{styleGuideId}:
+    delete:
+      summary: Delete the style guide
+      description: Delete the style guide.
+      operationId: deleteStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideid-delete
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+    get:
+      summary: Get single style guide
+      description: Get single style guide.
+      operationId: getStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideid-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+    put:
+      summary: Update the style guide.
+      description: Update the style guide. File name and contents will replaced with
+        the new one.
+      operationId: updateStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideid-put
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style guide ID
+      - in: formData
+        name: styleguides
+        description: Single file data
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+  /projects/{projectId}/styleguides/{styleGuideId}/download:
+    get:
+      summary: Download a style guide
+      description: Download a style guide.
+      operationId: downloadStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideiddownload-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+      - Download
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

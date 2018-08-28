@@ -91,6 +91,22 @@ paths:
           description: OK
       tags:
       - Projects
+  /?Action=CreateProject:
+    get:
+      summary: Create Project
+      description: Creates a new project.
+      operationId: createProject
+      x-api-path-slug: actioncreateproject-get
+      parameters:
+      - in: query
+        name: name
+        description: The projects name
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

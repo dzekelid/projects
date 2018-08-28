@@ -969,6 +969,45 @@ paths:
       - Projects
       - Project
       - Operations
+  /projects/{project}/operations/{operation}:
+    get:
+      summary: Get Projects Project Operations Operation
+      description: Retrieves an instance operation that has been performed on an instance.
+      operationId: sql.operations.get
+      x-api-path-slug: projectsprojectoperationsoperation-get
+      parameters:
+      - in: path
+        name: operation
+        description: Instance operation ID
+      - in: path
+        name: project
+        description: Project ID of the project that contains the instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Operations
+      - Operation
+  /projects/{project}/tiers:
+    get:
+      summary: Get Projects Project Tiers
+      description: Lists all available service tiers for Google Cloud SQL, for example
+        D1, D2. For related information, see Pricing.
+      operationId: sql.tiers.list
+      x-api-path-slug: projectsprojecttiers-get
+      parameters:
+      - in: path
+        name: project
+        description: Project ID of the project for which to list tiers
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Tiers
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

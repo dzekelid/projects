@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: GlobalChange.gov
 x-complete: 1
@@ -33,4 +32,19 @@ paths:
           description: OK
       tags:
       - Projects
----
+  /project/{project_identifier}:
+    get:
+      summary: Get a representation of a project.
+      description: Get JSON which represents the structure of a project.
+      operationId: get-json-which-represents-the-structure-of-a-project
+      x-api-path-slug: projectproject-identifier-get
+      parameters:
+      - in: path
+        name: project_identifier
+        description: project_identifier description
+      responses:
+        200:
+          description: OK
+      tags:
+      - Representation
+      - Project

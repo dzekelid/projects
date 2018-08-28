@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Google Cloud SQL
 x-complete: 1
@@ -1007,4 +1006,3 @@ paths:
       - Projects
       - Project
       - Tiers
----

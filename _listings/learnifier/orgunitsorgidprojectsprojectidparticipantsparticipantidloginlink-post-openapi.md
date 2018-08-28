@@ -263,6 +263,28 @@ paths:
       - Participants
       - $participantId
       - Loginlink
+  /orgunits/{orgid}/projects/{projectid}/teammembers:
+    get:
+      summary: Project team members
+      description: Returns the project team members. A team member is a ....
+      operationId: orgunits.orgid.projects.projectid.teammembers.get
+      x-api-path-slug: orgunitsorgidprojectsprojectidteammembers-get
+      parameters:
+      - in: path
+        name: orgid
+        description: Id of the organization unit
+      - in: path
+        name: projectid
+        description: Id of the project
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Projects
+      - Projectid
+      - Team
+      - Members
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

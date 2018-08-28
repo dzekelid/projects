@@ -46,6 +46,66 @@ paths:
           description: OK
       tags:
       - Projects
+  /?Action=ListProjects:
+    get:
+      summary: List Projects
+      description: Gets information about projects.
+      operationId: listProjects
+      x-api-path-slug: actionlistprojects-get
+      parameters:
+      - in: query
+        name: arn
+        description: Optional
+        type: string
+      - in: query
+        name: nextToken
+        description: An identifier that was returned from the previous call to this
+          operation, which can be used to return the next set of items in the list
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+  /?Action=UpdateProject:
+    get:
+      summary: Update Project
+      description: Modifies the specified project name, given the project ARN and
+        a new name.
+      operationId: updateProject
+      x-api-path-slug: actionupdateproject-get
+      parameters:
+      - in: query
+        name: arn
+        description: The Amazon Resource Name (ARN) of the project whose name you
+          wish to update
+        type: string
+      - in: query
+        name: name
+        description: A string representing the new name of the project that you are
+          updating
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+  /?Action=CreateProject:
+    get:
+      summary: Create Project
+      description: Creates a new project.
+      operationId: createProject
+      x-api-path-slug: actioncreateproject-get
+      parameters:
+      - in: query
+        name: name
+        description: The projects name
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -20,33 +20,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /builds/{accountName}/{projectSlug}/{buildVersion}:
-    delete:
-      summary: Delete Builds Accountname Projectslug Buildversion
-      description: Delete builds accountname projectslug buildversion.
-      operationId: deleteBuildsAccountnameProjectslugBuildversion
-      x-api-path-slug: buildsaccountnameprojectslugbuildversion-delete
-      responses:
-        200:
-          description: OK
-      tags:
-      - Builds
-      - AccountName
-      - ProjectSlug
-      - BuildVersion
-    parameters:
-      summary: Parameters Builds Accountname Projectslug Buildversion
-      description: Parameters builds accountname projectslug buildversion.
-      operationId: parametersBuildsAccountnameProjectslugBuildversion
-      x-api-path-slug: buildsaccountnameprojectslugbuildversion-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Builds
-      - AccountName
-      - ProjectSlug
-      - BuildVersion
   /projects:
     get:
       summary: Get Projects
@@ -503,6 +476,142 @@ paths:
       - Settings
       - Environment
       - Variables
+  /projects/{accountName}/{projectSlug}/settings/yaml:
+    get:
+      summary: Get Projects Accountname Projectslug Settings Yaml
+      description: Get projects accountname projectslug settings yaml.
+      operationId: getProjectsAccountnameProjectslugSettingsYaml
+      x-api-path-slug: projectsaccountnameprojectslugsettingsyaml-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - AccountName
+      - ProjectSlug
+      - Settings
+      - Yaml
+    parameters:
+      summary: Parameters Projects Accountname Projectslug Settings Yaml
+      description: Parameters projects accountname projectslug settings yaml.
+      operationId: parametersProjectsAccountnameProjectslugSettingsYaml
+      x-api-path-slug: projectsaccountnameprojectslugsettingsyaml-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - AccountName
+      - ProjectSlug
+      - Settings
+      - Yaml
+    put:
+      summary: Put Projects Accountname Projectslug Settings Yaml
+      description: Put projects accountname projectslug settings yaml.
+      operationId: putProjectsAccountnameProjectslugSettingsYaml
+      x-api-path-slug: projectsaccountnameprojectslugsettingsyaml-put
+      parameters:
+      - in: body
+        name: body
+        description: The body of requests should contain YAML data
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - AccountName
+      - ProjectSlug
+      - Settings
+      - Yaml
+  /projects/status/{webhookId}:
+    get:
+      summary: Get Projects Status Webhookid
+      description: Get projects status webhookid.
+      operationId: getProjectsStatusWebhook
+      x-api-path-slug: projectsstatuswebhookid-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Status
+      - WebhookId
+    parameters:
+      summary: Parameters Projects Status Webhookid
+      description: Parameters projects status webhookid.
+      operationId: parametersProjectsStatusWebhook
+      x-api-path-slug: projectsstatuswebhookid-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Status
+      - WebhookId
+  /projects/status/{webhookId}/branch/{buildBranch}:
+    get:
+      summary: Get Projects Status Webhookid Branch Buildbranch
+      description: Get projects status webhookid branch buildbranch.
+      operationId: getProjectsStatusWebhookBranchBuildbranch
+      x-api-path-slug: projectsstatuswebhookidbranchbuildbranch-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Status
+      - WebhookId
+      - Branch
+      - BuildBranch
+    parameters:
+      summary: Parameters Projects Status Webhookid Branch Buildbranch
+      description: Parameters projects status webhookid branch buildbranch.
+      operationId: parametersProjectsStatusWebhookBranchBuildbranch
+      x-api-path-slug: projectsstatuswebhookidbranchbuildbranch-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Status
+      - WebhookId
+      - Branch
+      - BuildBranch
+  /builds/{accountName}/{projectSlug}/{buildVersion}:
+    delete:
+      summary: Delete Builds Accountname Projectslug Buildversion
+      description: Delete builds accountname projectslug buildversion.
+      operationId: deleteBuildsAccountnameProjectslugBuildversion
+      x-api-path-slug: buildsaccountnameprojectslugbuildversion-delete
+      responses:
+        200:
+          description: OK
+      tags:
+      - Builds
+      - AccountName
+      - ProjectSlug
+      - BuildVersion
+    parameters:
+      summary: Parameters Builds Accountname Projectslug Buildversion
+      description: Parameters builds accountname projectslug buildversion.
+      operationId: parametersBuildsAccountnameProjectslugBuildversion
+      x-api-path-slug: buildsaccountnameprojectslugbuildversion-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Builds
+      - AccountName
+      - ProjectSlug
+      - BuildVersion
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

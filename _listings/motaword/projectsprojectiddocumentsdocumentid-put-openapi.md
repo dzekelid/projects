@@ -538,6 +538,275 @@ paths:
       - ProjectId
       - Documents
       - DocumentId
+  /projects/{projectId}/documents/{documentId}/download:
+    get:
+      summary: Download a document
+      description: Download a document.
+      operationId: downloadDocument
+      x-api-path-slug: projectsprojectiddocumentsdocumentiddownload-get
+      parameters:
+      - in: path
+        name: documentId
+        description: Document ID
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Documents
+      - DocumentId
+      - Download
+  /projects/{projectId}/glossaries:
+    get:
+      summary: Get a list of glossaries
+      description: Get a list of glossaries.
+      operationId: getGlossaries
+      x-api-path-slug: projectsprojectidglossaries-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Glossaries
+    post:
+      summary: Upload a new glossary
+      description: Upload a new glossary.
+      operationId: createGlossary
+      x-api-path-slug: projectsprojectidglossaries-post
+      parameters:
+      - in: formData
+        name: glossaries
+        description: You can only add one glossary, even though the name suggests
+          multiple glossaries
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Glossaries
+  /projects/{projectId}/glossaries/{glossaryId}:
+    delete:
+      summary: Delete the glossary
+      description: Delete the glossary.
+      operationId: deleteGlossary
+      x-api-path-slug: projectsprojectidglossariesglossaryid-delete
+      parameters:
+      - in: path
+        name: glossaryId
+        description: Glossary ID
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Glossaries
+      - GlossaryId
+    get:
+      summary: Get single glossary
+      description: Get single glossary.
+      operationId: getGlossary
+      x-api-path-slug: projectsprojectidglossariesglossaryid-get
+      parameters:
+      - in: path
+        name: glossaryId
+        description: Glossary ID
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Glossaries
+      - GlossaryId
+    put:
+      summary: Update the glossary.
+      description: Update the glossary. File name and contents will replaced with
+        the new one.
+      operationId: updateGlossary
+      x-api-path-slug: projectsprojectidglossariesglossaryid-put
+      parameters:
+      - in: formData
+        name: glossaries
+        description: Single file data
+      - in: path
+        name: glossaryId
+        description: Glossary ID
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Glossaries
+      - GlossaryId
+  /projects/{projectId}/glossaries/{glossaryId}/download:
+    get:
+      summary: Download a glossary
+      description: Download a glossary.
+      operationId: downloadGlossary
+      x-api-path-slug: projectsprojectidglossariesglossaryiddownload-get
+      parameters:
+      - in: path
+        name: glossaryId
+        description: Glossary ID
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Glossaries
+      - GlossaryId
+      - Download
+  /projects/{projectId}/styleguides:
+    get:
+      summary: Get a list of style guides
+      description: Get a list of style guides.
+      operationId: getStyleGuides
+      x-api-path-slug: projectsprojectidstyleguides-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+    post:
+      summary: Upload a new style guide
+      description: Upload a new style guide.
+      operationId: createStyleGuide
+      x-api-path-slug: projectsprojectidstyleguides-post
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: formData
+        name: styleguides[]
+        description: You can add as many files as you want in styleguides[] parameter
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+  /projects/{projectId}/styleguides/{styleGuideId}:
+    delete:
+      summary: Delete the style guide
+      description: Delete the style guide.
+      operationId: deleteStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideid-delete
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+    get:
+      summary: Get single style guide
+      description: Get single style guide.
+      operationId: getStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideid-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+    put:
+      summary: Update the style guide.
+      description: Update the style guide. File name and contents will replaced with
+        the new one.
+      operationId: updateStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideid-put
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style guide ID
+      - in: formData
+        name: styleguides
+        description: Single file data
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+  /projects/{projectId}/styleguides/{styleGuideId}/download:
+    get:
+      summary: Download a style guide
+      description: Download a style guide.
+      operationId: downloadStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideiddownload-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+      - Download
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

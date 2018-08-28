@@ -209,6 +209,83 @@ paths:
       - Projectid
       - Participants
       - $participantId
+  /orgunits/{orgid}/projects/{projectid}/participants/${participantId}/activate:
+    post:
+      summary: Activate participant
+      description: Activates a participant so that it can be used
+      operationId: orgunits.orgid.projects.projectid.participants._participantId.activate.post
+      x-api-path-slug: orgunitsorgidprojectsprojectidparticipantsparticipantidactivate-post
+      parameters:
+      - in: path
+        name: orgid
+        description: Id of the organization unit
+      - in: path
+        name: participantId
+        description: Id of the participant
+      - in: path
+        name: projectid
+        description: Id of the project
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Projects
+      - Projectid
+      - Participants
+      - $participantId
+      - Activate
+  /orgunits/{orgid}/projects/{projectid}/participants/${participantId}/loginlink:
+    post:
+      summary: Participant login link
+      description: |-
+        Returns a single sign on link for the participant. The link is only usable once and should be used directly. The link expires after a few minutes.
+
+        This operation requires the *login link* permission.
+      operationId: orgunits.orgid.projects.projectid.participants._participantId.loginlink.post
+      x-api-path-slug: orgunitsorgidprojectsprojectidparticipantsparticipantidloginlink-post
+      parameters:
+      - in: path
+        name: orgid
+        description: Id of the organization unit
+      - in: path
+        name: participantId
+        description: Id of the participant
+      - in: path
+        name: projectid
+        description: Id of the project
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Projects
+      - Projectid
+      - Participants
+      - $participantId
+      - Loginlink
+  /orgunits/{orgid}/projects/{projectid}/teammembers:
+    get:
+      summary: Project team members
+      description: Returns the project team members. A team member is a ....
+      operationId: orgunits.orgid.projects.projectid.teammembers.get
+      x-api-path-slug: orgunitsorgidprojectsprojectidteammembers-get
+      parameters:
+      - in: path
+        name: orgid
+        description: Id of the organization unit
+      - in: path
+        name: projectid
+        description: Id of the project
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Projects
+      - Projectid
+      - Team
+      - Members
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

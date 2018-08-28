@@ -785,6 +785,28 @@ paths:
       - ProjectId
       - Styleguides
       - StyleGuideId
+  /projects/{projectId}/styleguides/{styleGuideId}/download:
+    get:
+      summary: Download a style guide
+      description: Download a style guide.
+      operationId: downloadStyleGuide
+      x-api-path-slug: projectsprojectidstyleguidesstyleguideiddownload-get
+      parameters:
+      - in: path
+        name: projectId
+        description: Project ID
+      - in: path
+        name: styleGuideId
+        description: Style Guide ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - ProjectId
+      - Styleguides
+      - StyleGuideId
+      - Download
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

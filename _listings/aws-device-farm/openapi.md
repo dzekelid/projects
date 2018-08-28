@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS Device Farm
 x-complete: 1
@@ -89,4 +88,19 @@ paths:
           description: OK
       tags:
       - Projects
----
+  /?Action=CreateProject:
+    get:
+      summary: Create Project
+      description: Creates a new project.
+      operationId: createProject
+      x-api-path-slug: actioncreateproject-get
+      parameters:
+      - in: query
+        name: name
+        description: The projects name
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project

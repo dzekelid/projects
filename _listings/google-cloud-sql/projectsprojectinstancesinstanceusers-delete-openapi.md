@@ -862,6 +862,151 @@ paths:
       - Instances
       - Instance
       - Users
+    get:
+      summary: Get Projects Project Instances Instance Users
+      description: Lists users in the specified Cloud SQL instance.
+      operationId: sql.users.list
+      x-api-path-slug: projectsprojectinstancesinstanceusers-get
+      parameters:
+      - in: path
+        name: instance
+        description: Database instance ID
+      - in: path
+        name: project
+        description: Project ID of the project that contains the instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Instances
+      - Instance
+      - Users
+    post:
+      summary: Add Projects Project Instances Instance Users
+      description: Creates a new user in a Cloud SQL instance.
+      operationId: sql.users.insert
+      x-api-path-slug: projectsprojectinstancesinstanceusers-post
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: instance
+        description: Database instance ID
+      - in: path
+        name: project
+        description: Project ID of the project that contains the instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Instances
+      - Instance
+      - Users
+    put:
+      summary: Put Projects Project Instances Instance Users
+      description: Updates an existing user in a Cloud SQL instance.
+      operationId: sql.users.update
+      x-api-path-slug: projectsprojectinstancesinstanceusers-put
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: host
+        description: Host of the user in the instance
+      - in: path
+        name: instance
+        description: Database instance ID
+      - in: query
+        name: name
+        description: Name of the user in the instance
+      - in: path
+        name: project
+        description: Project ID of the project that contains the instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Put
+      - Projects
+      - Project
+      - Instances
+      - Instance
+      - Users
+  /projects/{project}/operations:
+    get:
+      summary: Get Projects Project Operations
+      description: Lists all instance operations that have been performed on the given
+        Cloud SQL instance in the reverse chronological order of the start time.
+      operationId: sql.operations.list
+      x-api-path-slug: projectsprojectoperations-get
+      parameters:
+      - in: query
+        name: instance
+        description: Cloud SQL instance ID
+      - in: query
+        name: maxResults
+        description: Maximum number of operations per response
+      - in: query
+        name: pageToken
+        description: A previously-returned page token representing part of the larger
+          set of results to view
+      - in: path
+        name: project
+        description: Project ID of the project that contains the instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Operations
+  /projects/{project}/operations/{operation}:
+    get:
+      summary: Get Projects Project Operations Operation
+      description: Retrieves an instance operation that has been performed on an instance.
+      operationId: sql.operations.get
+      x-api-path-slug: projectsprojectoperationsoperation-get
+      parameters:
+      - in: path
+        name: operation
+        description: Instance operation ID
+      - in: path
+        name: project
+        description: Project ID of the project that contains the instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Operations
+      - Operation
+  /projects/{project}/tiers:
+    get:
+      summary: Get Projects Project Tiers
+      description: Lists all available service tiers for Google Cloud SQL, for example
+        D1, D2. For related information, see Pricing.
+      operationId: sql.tiers.list
+      x-api-path-slug: projectsprojecttiers-get
+      parameters:
+      - in: path
+        name: project
+        description: Project ID of the project for which to list tiers
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - Project
+      - Tiers
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

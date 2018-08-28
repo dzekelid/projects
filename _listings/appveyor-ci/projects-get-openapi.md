@@ -20,33 +20,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /builds/{accountName}/{projectSlug}/{buildVersion}:
-    delete:
-      summary: Delete Builds Accountname Projectslug Buildversion
-      description: Delete builds accountname projectslug buildversion.
-      operationId: deleteBuildsAccountnameProjectslugBuildversion
-      x-api-path-slug: buildsaccountnameprojectslugbuildversion-delete
-      responses:
-        200:
-          description: OK
-      tags:
-      - Builds
-      - AccountName
-      - ProjectSlug
-      - BuildVersion
-    parameters:
-      summary: Parameters Builds Accountname Projectslug Buildversion
-      description: Parameters builds accountname projectslug buildversion.
-      operationId: parametersBuildsAccountnameProjectslugBuildversion
-      x-api-path-slug: buildsaccountnameprojectslugbuildversion-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Builds
-      - AccountName
-      - ProjectSlug
-      - BuildVersion
   /projects:
     get:
       summary: Get Projects

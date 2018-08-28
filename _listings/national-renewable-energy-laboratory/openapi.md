@@ -1,13 +1,12 @@
----
 swagger: "2.0"
 x-collection-name: National Renewable Energy Laboratory
 x-complete: 1
 info:
-  title: High Performance Building Database
-  description: the-buildings-database-is-a-shared-resource-for-the-building-industry--the-database-developed-by-the-u-s--department-of-energy-and-the-national-renewable-energy-laboratory-nrel-is-a-unique-central-repository-of-indepth-information-and-data-on-highperformance-green-building-projects-across-the-united-states-and-abroad---
-  version: "1.0"
+  title: Transportation Laws and Incentives
+  description: query-our-database-of-state-and-federal-laws-and-incentives-for-alternative-fuels
+  version: 0.1.0
 host: developer.nrel.gov
-basePath: /api/building-case-studies
+basePath: /api/transportation-incentives-laws
 schemes:
 - http
 produces:
@@ -67,4 +66,3 @@ paths:
           description: OK
       tags:
       - Projects
----
